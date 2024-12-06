@@ -77,5 +77,23 @@ main.o: main.c header.h
 4. Target clean:
 Membersihkan file hasil kompilasi menggunakan perintah:
 rm -f *.o lab
- 
- 
+
+SOAL BONUS
+Soal bonus ini merupakan program yang bertujuan untuk membaca lirik lagu dari file teks, membersihkan kata-kata dari tanda baca, dan menyimpan kata-kata unik ke dalam file output.Program ini berguna untuk mengumpulkan dan menyimpan kata-kata unik dari lirik lagu, yang dapat digunakan untuk analisis lebih lanjut, seperti pembuatan kamus atau analisis frekuensi kata.
+
+Header dan Definisi:
+
+Kode ini mengimpor beberapa pustaka standar (stdio.h, stdlib.h, string.h, ctype.h) dan mendefinisikan beberapa konstanta untuk panjang maksimum baris, panjang maksimum kata, dan jumlah maksimum kata.
+Fungsi clean:
+
+Fungsi ini menerima sebuah string (kata) dan menghapus tanda baca, serta mengubah semua huruf menjadi huruf kecil. Hanya karakter alfanumerik, tanda hubung (-), dan apostrof (') yang diperbolehkan. Hasilnya disalin kembali ke string asli.
+Fungsi main:
+
+Membuka file input (lirik.txt) untuk dibaca dan file output (kosa-kata.word) untuk ditulis. Jika salah satu file gagal dibuka, program akan mencetak pesan kesalahan dan keluar.
+Membaca baris pertama dari file input (yang diasumsikan sebagai judul) dan menuliskannya ke file output.
+Membaca setiap baris lirik dari file input, memecahnya menjadi kata-kata menggunakan strtok, dan membersihkan setiap kata dengan memanggil fungsi clean.
+Memeriksa apakah kata yang telah dibersihkan sudah ada dalam daftar kata yang telah disimpan. Jika tidak ada, kata tersebut disalin ke dalam array kata menggunakan strdup, dan ditulis ke file output dengan format kata=.
+Menutup File dan Membebaskan Memori:
+
+Setelah semua baris dibaca, file input dan output ditutup.
+Memori yang dialokasikan untuk setiap kata dibebaskan untuk mencegah kebocoran memori.
