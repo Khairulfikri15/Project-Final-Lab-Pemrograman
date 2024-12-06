@@ -1,12 +1,22 @@
 #include <stdio.h>
 #include "header.h"
 
-int main () {
+int main (int *admin, char *username, char *password) {
 
     //variabels
     
     int admin = 0;
     int option = 0;
+
+    // Validasi jumlah argumen
+    if (argc != 3) {
+        printf("Penggunaan: %s <username> <password>\n", argv[0]);
+        return 1;
+    }
+
+    // Mendapatkan username dan password dari argumen
+    char *username = argv[1];
+    char *password = argv[2];
     
     
     printf("========================================\n");
