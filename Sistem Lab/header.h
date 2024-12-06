@@ -2,7 +2,7 @@
 #define HEADER_H
 
 
-int menuLogin(int *admin);
+int menuLogin(int *admin,char *username,char *password);
 int lihatList();
 int pinjamAlat();
 int lihatPinjam();
