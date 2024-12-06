@@ -24,7 +24,6 @@ int main (int argc, char *argv[]) {
     printf("========================================\n");
     printf("\n");
 
-    printf("Silahkan login terlebih dahulu\n");
     if(menuLogin(&admin, username, password)) {
         printf("Login berhasil\n");
         if(admin){
