@@ -15,6 +15,7 @@ Sistem ini membantu laboratorium untuk mengelola alat-alat yang dipinjam dan dik
 Semua data disimpan dalam file berformat .txt, memastikan data dapat diakses kembali meskipun program dimatikan.
 3.	Otomasi Proses Manual:
 Menggantikan pencatatan manual dengan proses otomatis yang melibatkan login, pengelolaan alat, dan pencatatan peminjaman.
+
 Alur Penggunaan Aplikasi
 1.	Login:
 o	Pengguna memasukkan username dan password melalui CLA.
