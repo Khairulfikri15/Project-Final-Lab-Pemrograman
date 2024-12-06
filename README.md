@@ -29,3 +29,17 @@ o	User mengembalikan alat, dan sistem menghapus catatan dari listPinjam.txt sert
 4.	Keluar dari Sistem:
 o	Setelah semua aktivitas selesai, pengguna dapat keluar dari sistem.
 
+FUNGSI-FUNGSINYA
+return.c : sebuah fungsi pengembalian dimana fungsi ini akan menghapus data di file listPinjam.txt dengan cara menulis semua data kecuali data yang mau dikembalikan ke file term.txt, kemudian file tersebut di rename menjadi file listTersedia.txt.
+PinjamAlat.c : sebuah fungsi peminjaman yang menambahkan data ke file listTersimpan.txt dengan menggunakan fungsi fprintf, sebelum ditambahkan di cek terlebih dahulu ke file listTersedia.txt, kalau datanya ada baru peminjaman boleh dilakukan.
+LihatList.c : sebuah fungsi untuk membaca data dari file listTersedia.txt kemudian menampilkannya ke layar/terminal
+Lihatpinjam.c : sebuah fungsi untuk membaca data dari file listpinjam.txt kemudian menampilkannya ke layar/terminal
+Tambahdata.c: sebuah fungsi penambahan data ke file listTersedia.txt dengan menggunakan fungsi fprintf untuk mencetak datanya ke file listTersedia.txt setelah sebelumnya data diinput dengan menggunakan fungsi scanf. Fungsi ini dibuat hanya untuk admin
+EditData.c: sebuah fungsi pengeditan data ke file listTersedia.txt berdasarkan id alat yang di input oleh admin. Fungsi ini dibuat hanya untuk admin.
+HapusData.c: sebuah fungsi penghapusan data yang ada di file listTersedia.txt berdasarkan id alat yang di input oleh admin. Fungsi ini dibuat hanya untuk admin.
+ListTersedia.txt : Sebuah file yang berisi data data alat laboratorium yang disimpan dengan format teratur. Data di file ini digunakan oleh fungsi fungsi yang telah dibuat untuk program ini.
+ListPinjam.txt: Sebuah file yang berisi data alat laboratorium yang telah dipinjam oleh pengguna. File ini merupakan output dari fungsi pinjamAlat.
+Akun.txt: Sebuah file yang berisi data username dan password akun pengguna. Data ini digunakan dalam fungsi login untuk masuk ke dalam program dan menentukan apakah akun tersebut adalah user atau admin.
+Header.h: Sebuah file header yang berisi prototype dari fungsi fungsi yang telah dibuat untuk nantinya di panggil kembali di program main.c
+Login.c : Fungsi menuLogin adalah sebuah program untuk memverifikasi login pengguna dengan membaca data dari file bernama "akun.txt".
+
