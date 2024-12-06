@@ -54,3 +54,28 @@ Header.h: Sebuah file header yang berisi prototype dari fungsi fungsi yang telah
 
 Login.c : Fungsi menuLogin adalah sebuah program untuk memverifikasi login pengguna dengan membaca data dari file bernama "akun.txt".
 
+MAKE FILE
+Makefile ini membantu mengelola proyek dengan banyak file sumber secara otomatis, sehingga mempermudah pengembang untuk kompilasi ulang hanya pada bagian yang berubah.
+Makefile ini digunakan untuk mengompilasi program dengan efisien menggunakan gcc. Berikut adalah komponennya:
+ 
+1. Variabel:
+CC = gcc: Menentukan compiler yang digunakan (gcc).
+CFLAGS = -Wall -g: Opsi kompilasi:
+-Wall: Mengaktifkan semua peringatan.
+-g: Menyertakan informasi debugging.
+OBJ: Daftar file object (.o) yang dihasilkan dari file .c.
+2. Target Utama:
+all: lab: Target utama. Memanggil target lab untuk menghasilkan file eksekusi lab.
+lab: $(OBJ): Menghubungkan semua file object ($(OBJ)) untuk membentuk file eksekusi lab:
+gcc -Wall -g -o lab main.o login.o ...
+3. Target Kompilasi File .c:
+Setiap file .c dikompilasi menjadi file .o dengan perintah:
+gcc -Wall -g -c [nama_file].c
+Contoh:
+main.o: main.c header.h
+​$(CC) $(CFLAGS) -c main.c
+4. Target clean:
+Membersihkan file hasil kompilasi menggunakan perintah:
+rm -f *.o lab
+ 
+ 
