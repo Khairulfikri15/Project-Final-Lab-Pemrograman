@@ -8,7 +8,7 @@ char fileUsername[100];
 char filePassword[100];
 char fileAdmin[100];
 
-int menuLogin(int *admin){
+int menuLogin(int *admin, char *username, char *password){
     FILE *fileAkun;
 
     //membuka file
@@ -17,14 +17,7 @@ int menuLogin(int *admin){
         printf("Error: tidak dapat membuka file.\n");
         return 0;
     }
-   
-    printf("Masukkan Username: ");
-    scanf("%s", username);
-
-    printf("Masukkan Password: ");
-    scanf("%s", password);
-
-
+    
     //looping untuk mengecek data di file akun.txt
     while (fscanf(fileAkun, "%s %s %s", fileUsername, filePassword, fileAdmin) != EOF)
     {
