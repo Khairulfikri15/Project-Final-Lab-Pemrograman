@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "header.h"
 
-int main (int *admin, char *username, char *password) {
+int main (int argc, char *argv[]) {
 
     //variabels
     
