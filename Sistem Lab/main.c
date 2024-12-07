@@ -24,6 +24,7 @@ int main (int argc, char *argv[]) {
     printf("========================================\n");
     printf("\n");
 
+    while(1) {
     if(menuLogin(&admin, username, password)) {
         printf("Login berhasil\n");
         if(admin){
@@ -43,6 +44,7 @@ int main (int argc, char *argv[]) {
     printf("2. Peminjaman alat Lab\n");
     printf("3. Lihat list alat lab yang dipinjam\n");
     printf("4. Kembalikan alat lab yang dipinjam\n");
+    printf("0. Kembali\n");
 
     if(admin){
         printf("5. Tambah data alat Lab\n");
@@ -86,7 +88,6 @@ int main (int argc, char *argv[]) {
         }
     } else{
         printf("Hanya admin yang boleh melakukan tambah Data\n");
-        return 1;
     };
     break;
 
@@ -97,7 +98,6 @@ int main (int argc, char *argv[]) {
         }
     }else{
         printf("Hanya admin yang boleh melakukan edit Data\n");
-        return 1;
     }; 
     break;
 
@@ -108,13 +108,17 @@ int main (int argc, char *argv[]) {
         }
     }else{
         printf("Hanya admin yang boleh melakukan hapus Data\n");
-        return 1;
     };
     break;
+
+    case 0:
+            printf("Kembali ke menu login...\n");
+            return 0; 
 
     default:
     printf("Option yang dipilih belum tersedia\n");
    }
+}
 
  return 0;
 
