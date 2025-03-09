@@ -1,4 +1,4 @@
-![tes](images/logo.png)
+!tes OPEN SPONSORSHIP (10).png
 
 
 Anggota kelompok 2:
