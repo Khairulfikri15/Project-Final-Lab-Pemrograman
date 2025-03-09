@@ -1,4 +1,4 @@
-![tes] (OPEN SPONSORSHIP (10).png)
+![Image](https://github.com/user-attachments/assets/80f4d811-492f-4cf9-beed-8bdd419b51e8)
 
 
 Anggota kelompok 2:
