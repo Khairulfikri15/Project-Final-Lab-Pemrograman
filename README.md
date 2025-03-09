@@ -109,8 +109,10 @@ Anggota Kelompok 3:
 3.	Khairul Fikri 2408107010032
 4.	Annisa Rahma Fathia 2408107010027
 5.	Illiza Khairamisa 2408107010017
+   
 DESKRIPSI SINGKAT PROGRAM:
 Program ini merupakan program Sistem Antrean Bank Sederhana yang mengkombinasikan tiga struktur data yaitu Linked List, Queue, dan Stack agar system antrean nasabah berjalan lebih efisien. Queue digunakan untuk mengelola antrean nasabah. Stack digunakan untuk mencatat Riwayat transaksi dan fitur pembatalan. Fitur utama yang terdapat di dalam program ini mencakup fitur menambahkan nasabah ke antrean, memproses layanan nasabah, menampilkan antrean saat ini, menampilkan Riwayat layanan, membatalkan transaksi terakhir, serta fitur keluar untuk mengakhiri program.
+
 INSTRUKSI KOMPILASI DAN CARA MENJALANKAN PROGRAM:
 1.	Kompilasi program dengan menggunakan perintah gcc main.c -o main 
 2.	Setelah dikompilasi, jalankan program dengan menggunakan perintah ./main 
