@@ -27,6 +27,5 @@ Selain antrean, program juga memiliki fitur Stack yang digunakan untuk mencatat 
 Program ini juga menyediakan fitur Undo, yang memungkinkan transaksi terakhir dibatalkan dan nasabah dikembalikan ke antrean. Fitur ini dijalankan dengan kombinasi pop() dari stack untuk mengambil transaksi terakhir, lalu enqueue() untuk memasukkan nasabah tersebut kembali ke antrean. Dengan menggabungkan struktur data ini, program mampu mensimulasikan sistem antrean bank secara lebih nyata, di mana nasabah masuk secara berurutan, dilayani satu per satu, serta riwayat layanan dapat direkam atau dibatalkan jika diperlukan. 
 
 SCREENSHOT HASIL EKSEKUSI PROGRAM:
-
 KENDALA DAN SOLUSI SELAMA PENGEMBANGAN:
 Kendala yang kami dapatkan selama pengembangan ialah kemungkinan adanya memory Leak (Kebocoran Memori). Penyebabnya karena saat melakukan malloc(), program mengalokasikan memori untuk struct Nasabah, tetapi tidak pernah melakukan free() setelah pengguna selesai diproses. Solusi untuk kendala tersebut adalah dengan membuat fungsi baru untuk membebaskan memori yang didalamnya terdapat fungsi free().
