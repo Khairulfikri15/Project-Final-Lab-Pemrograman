@@ -1,3 +1,6 @@
+![tes](images/logo.png)
+
+
 Anggota kelompok 2:
 1. fitriani_2408107010022
 2. ⁠Fawwaz_Ziyadi_Ilmi_2408107010021
