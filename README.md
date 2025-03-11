@@ -1,7 +1,7 @@
 ![Image](https://github.com/user-attachments/assets/80f4d811-492f-4cf9-beed-8bdd419b51e8)
 
 ![Image](https://github.com/user-attachments/assets/8a6a753a-e8b6-47f8-8f6a-a36e3f32ac0d)
-
+![Image](https://github.com/user-attachments/assets/a097e7fd-2c10-488e-924f-0d762caa6307)
 
 Anggota kelompok 2:
 1. fitriani_2408107010022
